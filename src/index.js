@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 import App from './app/layout/App';
-import * as serviceWorker from './serviceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 const rootEl = document.getElementById('root');
 
@@ -17,6 +17,6 @@ if (module.hot) {
   })
 }
 
-render();
+render()
 
-serviceWorker.unregister();
+registerServiceWorker();
